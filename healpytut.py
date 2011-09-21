@@ -271,6 +271,7 @@ show()
 #! http://lambda.gsfc.nasa.gov/data/map/dr4/skymaps/7yr/raw/wmap_band_imap_r9_7yr_W_v4.fits
 
 filename = 'wmap_band_imap_r9_7yr_W_v4.fits'
+#filename = '/global/scratch/sd/planck/user/zonca/healpytut/wmap_band_imap_r9_7yr_W_v4.fits'
 m = healpy.read_map(filename) #by default converts to RING!!
 healpy.mollview(m, title='Histogram equalized', nest=False, norm='hist')
 show()
@@ -302,7 +303,9 @@ print(theta_ecl, phi_ecl)
 #!~~~~~~~
 #! http://lambda.gsfc.nasa.gov/data/map/dr4/ancillary/masks/wmap_temperature_analysis_mask_r9_7yr_v4.fits
 
-mask = healpy.read_map('wmap_temperature_analysis_mask_r9_7yr_v4.fits').astype(np.bool)
+mask_filename = 'wmap_band_imap_r9_7yr_W_v4.fits'
+#mask_filename = '/global/scratch/sd/planck/user/zonca/healpytut/wmap_band_imap_r9_7yr_W_v4.fits'
+mask = healpy.read_map(mask_filename).astype(np.bool)
 
 m = healpy.read_map(filename)
 
