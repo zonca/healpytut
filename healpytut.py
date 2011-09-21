@@ -8,15 +8,15 @@
 #!
 #!   module load python
 #!   module load cmbdev
-
+#
 #!Your laptop
-
+#
 #!install Entough Python Distribution for Win/Mac
 #!http://www.enthought.com/products/epd_free.php
-
+#
 #!Components
 #!----------
-
+#
 #!* Ipython: Interactive shell
 #!* Numpy: Array math
 #!* Matplotlib: Plotting
